@@ -601,39 +601,39 @@ export default {
   position: absolute
 .p2_1
   left: 200px
-  top: 1778px
+  top: 1788px
   position: absolute
 .p2_2
   left: 525px
-  top: 1778px
+  top: 1788px
   position: absolute
 .p2_3
   left: 850px
-  top: 1778px
+  top: 1788px
   position: absolute
 .p3_1
   left: 200px
-  top: 1859px
+  top: 1879px
   position: absolute
 .p3_2
   left: 525px
-  top: 1859px
+  top: 1879px
   position: absolute
 .p3_3
   left: 850px
-  top: 1859px
+  top: 1879px
   position: absolute
 .p4_1
   left: 200px
-  top: 1940px
+  top: 1970px
   position: absolute
 .p4_2
   left: 525px
-  top: 1940px
+  top: 1970px
   position: absolute
 .p4_3
   left: 850px
-  top: 1940px
+  top: 1970px
   position: absolute
 .t1_1
   position: absolute
@@ -703,7 +703,7 @@ export default {
   width: 258px
   height: 44px
   left: 233px
-  top: 1780px
+  top: 1790px
   font-family: Mandali
   font-style: normal
   font-weight: normal
@@ -724,7 +724,7 @@ export default {
   width: 258px
   height: 44px
   left: 553px
-  top: 1780px
+  top: 1790px
   font-family: Mandali
   font-style: normal
   font-weight: normal
@@ -745,7 +745,7 @@ export default {
   width: 265px
   height: 44px
   left: 880px
-  top: 1780px
+  top: 1790px
   font-family: Mandali
   font-style: normal
   font-weight: normal
@@ -766,7 +766,7 @@ export default {
   width: 258px
   height: 44px
   left: 233px
-  top: 1860px
+  top: 1880px
   font-family: Mandali
   font-style: normal
   font-weight: normal
@@ -787,7 +787,7 @@ export default {
   width: 258px
   height: 44px
   left: 553px
-  top: 1863px
+  top: 1883px
   font-family: Mandali
   font-style: normal
   font-weight: normal
@@ -808,7 +808,7 @@ export default {
   width: 265px
   height: 44px
   left: 880px
-  top: 1860px
+  top: 1880px
   font-family: Mandali
   font-style: normal
   font-weight: normal
@@ -829,7 +829,7 @@ export default {
   width: 258px
   height: 44px
   left: 233px
-  top: 1945px
+  top: 1975px
   font-family: Mandali
   font-style: normal
   font-weight: normal
@@ -850,7 +850,7 @@ export default {
   width: 258px
   height: 44px
   left: 553px
-  top: 1940px
+  top: 1970px
   font-family: Mandali
   font-style: normal
   font-weight: normal
@@ -871,7 +871,7 @@ export default {
   width: 265px
   height: 44px
   left: 880px
-  top: 1940px
+  top: 1970px
   font-family: Mandali
   font-style: normal
   font-weight: normal
