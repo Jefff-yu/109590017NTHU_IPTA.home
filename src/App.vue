@@ -158,10 +158,10 @@
       i.rain
       button.t1_1 【徵件公告】春之清華—藝術卓越獎科技藝術類 甄選辦法
       button.t1_2 【展覽】《那顆Ｇ1咻！》國立清華大學藝術學院學士班第一屆系展
-      button.t1_3 【獲獎】《那顆Ｇ1咻！》國立清華大學藝術學院學士班第一屆系展得獎名單
+      button.t1_3 【獲獎】《那顆Ｇ1咻！》國立清華大學藝術學院學士班第一屆系展獲獎名單
       button.t2_1 國立清華大學藝術學院學士班 徵聘【助理教授級以上】專任教師1名
       button.t2_2 【講座】《 科技物件與人類幻象講座IX》6/16 Tue
-      button.t2_3 【獲獎】2020春之清華 – 藝術卓越獎 科技藝術類 得獎名單
+      button.t2_3 【獲獎】2020春之清華 – 藝術卓越獎 科技藝術類 獲獎名單
       button.t3_1 國立清華大學藝術學院學士班公開徵求班主任候選人啓事
       button.t3_2 【演講】05/28 從腦科學看藝術 
       button.t3_3 【獲獎】2020藝術學院學士班春之清華獎學金 獲獎名單
@@ -688,7 +688,7 @@ export default {
   font-weight: normal
   font-size: 11px
   line-height: 22px
-  letter-spacing: 0.3em
+  letter-spacing: 0.2em
   color: #FFFFFF
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   button
