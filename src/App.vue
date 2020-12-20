@@ -272,9 +272,9 @@ export default {
   color: #FFFFFF
 .spring
   position: relative
-  width: 1320px
+  width: 1020px
   height: 130px
-  left: 0px
+  left: 145px
   top: -50px
   background: linear-gradient(180deg, rgba(232, 67, 127, 0) 0%, #10B0A4 100%)
   font-family: Mandali
