@@ -199,6 +199,7 @@ export default {
   width: 60px
 .A
   letter-spacing: 0.1em
+  font-family: "儷黑 Pro"
 .L
   width: 60px
 .info
@@ -539,7 +540,7 @@ export default {
   position: absolute
   width: 184px
   height: 51px
-  left: 253px
+  left: 903px
   top: 1613px
   background: linear-gradient(180deg, #10B0A4 0%, rgba(16, 176, 164, 0) 100%)
   font-family: Mandali
@@ -560,7 +561,7 @@ export default {
   position: absolute
   width: 184px
   height: 51px
-  left: 903px
+  left: 253px
   top: 1613px
   background: linear-gradient(180deg, #10B0A4 0%, rgba(16, 176, 164, 0) 100%)
   font-family: Mandali
