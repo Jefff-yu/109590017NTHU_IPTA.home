@@ -74,7 +74,7 @@
       button.actibu 活動公告
       button.awrbu 獲獎公告
       button.offibu 系所公告
-      .i1
+      button.i1  
       .S1
       .S3
       .S4
@@ -83,7 +83,7 @@
       .S7
       .S8
       .S9
-      button.R2
+      button.R2 
       .R3
       .R4
       .R5
