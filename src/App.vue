@@ -183,16 +183,6 @@ export default {
   },
   data(){
     return{
-      // newstitle: '國立清華大學藝術學院',
-      // newsm: '國立清華大學藝術學院 Email   Tel:+886-3-5715131 #78801   2020 Copyright ©',
-      // news:[
-      //   {bb:'yeee',pp:'yaaaa'},
-      //   {bb:'yee',pp:'yaaa'},
-      //   {bb:'ye',pp:'yaa'},
-      //   {bb:'y',pp:'ya'},
-      //   {bb:'yeeee',pp:'yaaaaa'},
-      //   {bb:'yeeeee',pp:'yaaaaaa'}
-      // ]
     }
   }
 }
