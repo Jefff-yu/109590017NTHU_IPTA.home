@@ -199,7 +199,7 @@ export default {
   width: 60px
 .A
   letter-spacing: 0.1em
-  font-family: "儷黑 Pro"
+  color: #FFFFFF
 .L
   width: 60px
 .info
