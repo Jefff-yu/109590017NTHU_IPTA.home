@@ -325,7 +325,7 @@ export default {
   98%
     transform: translateY(0px)
   99%
-    transform: translateY(0.25px)
+    transform: translateY(0.5px)
   100%
     transform: translateY(0px)
 .header
