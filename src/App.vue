@@ -1,175 +1,176 @@
 <template lang="pug">
   #app
-    el-header.header
-      el-menu.el-menu(:default-active='activeIndex' menu-trigger='hover' mode='horizontal' @select='handleSelect' text-color='#fff' background-color='#E8437F' letter-spacing='0.4em' )      
-        el-menu-item.E
-        el-menu-item.L       
-          img.logo( src='~@/assets/cis-1-1.png')
-        el-menu-item.A IPTA 藝術學院學士班
-        el-menu-item.nthuipta(index='1' menu-trigger='hover') 國立清華大學藝術學院
-        el-menu-item.nthuipta(index='2' menu-trigger='hover') 首頁
-        el-menu-item.nthuipta(index='3' menu-trigger='hover') 最新消息
-        el-submenu.nthuipta(index='4' menu-trigger='hover') 
-          template.nthuipta(slot='title') 招生資訊
-          el-menu-item.nthuipta(index='4-1') 春之清華卓越獎五名
-          el-menu-item.nthuipta(index='4-2') 學士班臉書粉絲頁
-          el-submenu.nthuipta(index='4-3' menu-trigger='hover') 
-            template.nthuipta(slot='title') ２０２０招生資訊
-            el-menu-item(index='4-3-1') ２０２０錄取名單
-            el-menu-item(index='4-3-2') ２０２０招生簡章
-            el-menu-item(index='4-3-3') ２０２０個人申請第二階段甄選注意事項
-            el-menu-item(index='4-3-3') ２０２０報名繳交資料
-          el-menu-item.nthuipta(index='4-4') 招生Ｑ＆Ａ
-          el-submenu.nthuipta(index='4-5' menu-trigger='hover') 
-            template(slot='title') 過往招生資訊
-            el-submenu.nthuipta(index='4-5-1' menu-trigger='hover') 
-              template.nthuipta(slot='title') ２０１９年招生資訊
-              el-menu-item(index='4-5-1-1') ２０１９錄取名單
-              el-menu-item(index='4-5-1-2') ２０１９招生簡章
-              el-menu-item(index='4-5-1-3') ２０１９個人申請第二階段甄選注意事項
-              el-menu-item(index='4-5-1-4') ２０１９報名繳交資料
-            el-submenu.nthuipta(index='4-5-2' menu-trigger='hover') 
-              template.nthuipta(slot='title') ２０１８年招生資訊
-              el-menu-item(index='4-5-2-1') ２０１８錄取名單
-              el-menu-item(index='4-5-2-2') ２０１８招生簡章
-              el-menu-item(index='4-5-2-3') ２０１８個人申請第二階段甄選注意事項
-              el-menu-item(index='4-5-2-4') ２０１８報名繳交資料
-        el-submenu.nthuipta(index='5' menu-trigger='hover') 
-          template.nthuipta(slot='title') 學士班
-          el-menu-item.nthuipta(index='5-1') 學士班簡介
-          el-menu-item.nthuipta(index='5-2') 學士班課程
-          el-menu-item.nthuipta(index='5-3') 國際交換
-          el-menu-item.nthuipta(index='5-4') 藝術學院大樓(New)
-        el-submenu.nthuipta(index='6' menu-trigger='hover') 
-          template.nthuipta(slot='title') 師資
-          el-menu-item.nthuipta(index='6-1') 學士班師資
-          el-menu-item.nthuipta(index='6-2') 藝設系師資
-          el-menu-item.nthuipta(index='6-3') 音樂系師資
-          el-menu-item.nthuipta(index='6-4') 電資學院師資
-        el-submenu.nthuipta(index='7' menu-trigger='hover') 
-          template.nthuipta(slot='title') 科藝賞析
-          el-menu-item.nthuipta(index='7-1') 數位文創作品
-          el-menu-item.nthuipta(index='7-2') 互動藝術作品
-          el-menu-item.nthuipta(index='7-3') 動力藝術作品
-          el-menu-item.nthuipta(index='7-4') 聲音藝術作品
-          el-menu-item.nthuipta(index='7-4') 科技表演藝術
-        el-menu-item.nthuipta(index='8' menu-trigger='hover') 聯絡我們
-    .section
-      img.group36(src='~@/assets/Group 36.png')
-      .spring 「春之清華」獎學金鼓勵藝術卓越學生「第一志願」選讀清華（5名）
-      .characteristic 學士班特色
-      .incha1 清華是國際頂尖科技大學
-      .incha2 加上合校後的藝術學院 
-      .incha3 具備發展「科技藝術」的卓越條件 
-      .incha4 我們號召年輕一代的科技藝術專家 
-      .incha5 規劃科技藝術跨域特別課程 
-      .incha6 並與業界合作推出創意跨域專題
-      .coab 核心能力
-      .coabin 社會關懷與品格實踐能力美感認知與經典欣賞能力自然感知與創新發想能力邏輯思辨與語文溝通能力國際觀點與在地行動能力資訊掌握與科技應用能力
-      img.group35(src='~@/assets/Group 35.png')
-      .Lt 清華大學2018年成立藝術學院〝科技藝術〞跨域「學士班」。「科技藝術（TechArt）」是當代藝術的新形式創作也是國際藝術發展的重要趨勢，包含虛擬藝術、互動藝術、電腦動畫、電腦音樂、聲音藝術、科技性表演藝術、混合藝術、網路社群、創客藝術、仿生藝術、生物藝術、人工生命等。在當代數位美學與數位藝術的基礎下，我們結合創新科技，如各種互動感測技術、虛擬實境、物聯網、人工智慧、大數據分析、基因工程...把「科技」與「藝術」結合視為「未來文化學」，培養前瞻性、跨域研究與創作人才。
-      .Rt 因應未來產業的發展趨勢，創新科技與當代藝術結合之創作如雨後春筍。清華大學是國內科學與科技的頂尖學府，對藝術學院發展「科技藝術」具有得天獨厚的優勢。本班師資除來自清華校內藝術學院、電資學院、工學院、生命科學院、人文社會等跨域教師外，我們也將聘進一群來自美國、歐洲與日本跨國與跨域的專業教師。也廣邀在臺灣在科技藝術創作領域最頂尖的業界團隊與藝術家加入我們的教學團隊，讓同學得到專業與多元的指導，並在共享學習、共享創意的環境裡，開創未來的產業，盡情發揮自己的潛能。
-      button.news1 最新消息
-      button.news2 最新消息
-      button.actibu 活動公告
-      button.awrbu 獲獎公告
-      button.offibu 系所公告
-      button.i1  
-      .S1
-      .S3
-      .S4
-      .S5
-      .S6
-      .S7
-      .S8
-      .S9
-      button.R2 
-      .R3
-      .R4
-      .R5
-      .R6
-      .R7
-      img.p2_1(src='~@/assets/2.png')
-      img.p2_2(src='~@/assets/2.png')
-      img.p2_3(src='~@/assets/2.png')
-      img.p1_1(src='~@/assets/10.png')
-      img.p1_2(src='~@/assets/10.png')
-      img.p1_3(src='~@/assets/10.png')
-      img.p3_1(src='~@/assets/3.png')
-      img.p3_2(src='~@/assets/3.png')
-      img.p3_3(src='~@/assets/3.png')
-      img.p4_1(src='~@/assets/4.png')
-      img.p4_2(src='~@/assets/4.png')
-      img.p4_3(src='~@/assets/4.png')
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      i.rain
-      button.t1_1 【徵件公告】春之清華—藝術卓越獎科技藝術類 甄選辦法
-      button.t1_2 【展覽】《那顆Ｇ1咻！》國立清華大學藝術學院學士班第一屆系展
-      button.t1_3 【獲獎】《那顆Ｇ1咻！》國立清華大學藝術學院學士班第一屆系展獲獎名單
-      button.t2_1 國立清華大學藝術學院學士班 徵聘【助理教授級以上】專任教師1名
-      button.t2_2 【講座】《 科技物件與人類幻象講座IX》6/16 Tue
-      button.t2_3 【獲獎】2020春之清華 – 藝術卓越獎 科技藝術類 獲獎名單
-      button.t3_1 國立清華大學藝術學院學士班公開徵求班主任候選人啓事
-      button.t3_2 【演講】05/28 從腦科學看藝術 
-      button.t3_3 【獲獎】2020藝術學院學士班春之清華獎學金 獲獎名單
-      button.t4_1 2020個人申請錄取名單
-      button.t4_2 【講座】05/26 當代劇場展演實務 華山藝文林璞總監
-      button.t4_3 【獲獎】2019藝術學院學士班春之清華獎學金 獲獎名單
-    button
-      img.group6( src='~@/assets/Group 6.png')
+    #container
+      el-header.header
+        el-menu.el-menu(:default-active='activeIndex' menu-trigger='hover' mode='horizontal' @select='handleSelect' text-color='#fff' background-color='#E8437F' letter-spacing='0.4em' )      
+          el-menu-item.E
+          el-menu-item.L       
+            img.logo( src='~@/assets/cis-1-1.png')
+          el-menu-item.A IPTA 藝術學院學士班
+          el-menu-item.nthuipta(index='1' menu-trigger='hover') 國立清華大學藝術學院
+          el-menu-item.nthuipta(index='2' menu-trigger='hover') 首頁
+          el-menu-item.nthuipta(index='3' menu-trigger='hover') 最新消息
+          el-submenu.nthuipta(index='4' menu-trigger='hover') 
+            template.nthuipta(slot='title') 招生資訊
+            el-menu-item.nthuipta(index='4-1') 春之清華卓越獎五名
+            el-menu-item.nthuipta(index='4-2') 學士班臉書粉絲頁
+            el-submenu.nthuipta(index='4-3' menu-trigger='hover') 
+              template.nthuipta(slot='title') ２０２０招生資訊
+              el-menu-item(index='4-3-1') ２０２０錄取名單
+              el-menu-item(index='4-3-2') ２０２０招生簡章
+              el-menu-item(index='4-3-3') ２０２０個人申請第二階段甄選注意事項
+              el-menu-item(index='4-3-3') ２０２０報名繳交資料
+            el-menu-item.nthuipta(index='4-4') 招生Ｑ＆Ａ
+            el-submenu.nthuipta(index='4-5' menu-trigger='hover') 
+              template(slot='title') 過往招生資訊
+              el-submenu.nthuipta(index='4-5-1' menu-trigger='hover') 
+                template.nthuipta(slot='title') ２０１９年招生資訊
+                el-menu-item(index='4-5-1-1') ２０１９錄取名單
+                el-menu-item(index='4-5-1-2') ２０１９招生簡章
+                el-menu-item(index='4-5-1-3') ２０１９個人申請第二階段甄選注意事項
+                el-menu-item(index='4-5-1-4') ２０１９報名繳交資料
+              el-submenu.nthuipta(index='4-5-2' menu-trigger='hover') 
+                template.nthuipta(slot='title') ２０１８年招生資訊
+                el-menu-item(index='4-5-2-1') ２０１８錄取名單
+                el-menu-item(index='4-5-2-2') ２０１８招生簡章
+                el-menu-item(index='4-5-2-3') ２０１８個人申請第二階段甄選注意事項
+                el-menu-item(index='4-5-2-4') ２０１８報名繳交資料
+          el-submenu.nthuipta(index='5' menu-trigger='hover') 
+            template.nthuipta(slot='title') 學士班
+            el-menu-item.nthuipta(index='5-1') 學士班簡介
+            el-menu-item.nthuipta(index='5-2') 學士班課程
+            el-menu-item.nthuipta(index='5-3') 國際交換
+            el-menu-item.nthuipta(index='5-4') 藝術學院大樓(New)
+          el-submenu.nthuipta(index='6' menu-trigger='hover') 
+            template.nthuipta(slot='title') 師資
+            el-menu-item.nthuipta(index='6-1') 學士班師資
+            el-menu-item.nthuipta(index='6-2') 藝設系師資
+            el-menu-item.nthuipta(index='6-3') 音樂系師資
+            el-menu-item.nthuipta(index='6-4') 電資學院師資
+          el-submenu.nthuipta(index='7' menu-trigger='hover') 
+            template.nthuipta(slot='title') 科藝賞析
+            el-menu-item.nthuipta(index='7-1') 數位文創作品
+            el-menu-item.nthuipta(index='7-2') 互動藝術作品
+            el-menu-item.nthuipta(index='7-3') 動力藝術作品
+            el-menu-item.nthuipta(index='7-4') 聲音藝術作品
+            el-menu-item.nthuipta(index='7-4') 科技表演藝術
+          el-menu-item.nthuipta(index='8' menu-trigger='hover') 聯絡我們
+      .section
+        img.group36(src='~@/assets/Group 36.png')
+        .spring 「春之清華」獎學金鼓勵藝術卓越學生「第一志願」選讀清華（5名）
+        .characteristic 學士班特色
+        .incha1 清華是國際頂尖科技大學
+        .incha2 加上合校後的藝術學院 
+        .incha3 具備發展「科技藝術」的卓越條件 
+        .incha4 我們號召年輕一代的科技藝術專家 
+        .incha5 規劃科技藝術跨域特別課程 
+        .incha6 並與業界合作推出創意跨域專題
+        .coab 核心能力
+        .coabin 社會關懷與品格實踐能力美感認知與經典欣賞能力自然感知與創新發想能力邏輯思辨與語文溝通能力國際觀點與在地行動能力資訊掌握與科技應用能力
+        img.group35(src='~@/assets/Group 35.png')
+        .Lt 清華大學2018年成立藝術學院〝科技藝術〞跨域「學士班」。「科技藝術（TechArt）」是當代藝術的新形式創作也是國際藝術發展的重要趨勢，包含虛擬藝術、互動藝術、電腦動畫、電腦音樂、聲音藝術、科技性表演藝術、混合藝術、網路社群、創客藝術、仿生藝術、生物藝術、人工生命等。在當代數位美學與數位藝術的基礎下，我們結合創新科技，如各種互動感測技術、虛擬實境、物聯網、人工智慧、大數據分析、基因工程...把「科技」與「藝術」結合視為「未來文化學」，培養前瞻性、跨域研究與創作人才。
+        .Rt 因應未來產業的發展趨勢，創新科技與當代藝術結合之創作如雨後春筍。清華大學是國內科學與科技的頂尖學府，對藝術學院發展「科技藝術」具有得天獨厚的優勢。本班師資除來自清華校內藝術學院、電資學院、工學院、生命科學院、人文社會等跨域教師外，我們也將聘進一群來自美國、歐洲與日本跨國與跨域的專業教師。也廣邀在臺灣在科技藝術創作領域最頂尖的業界團隊與藝術家加入我們的教學團隊，讓同學得到專業與多元的指導，並在共享學習、共享創意的環境裡，開創未來的產業，盡情發揮自己的潛能。
+        button.news1 最新消息
+        button.news2 最新消息
+        button.actibu 活動公告
+        button.awrbu 獲獎公告
+        button.offibu 系所公告
+        button.i1  
+        .S1
+        .S3
+        .S4
+        .S5
+        .S6
+        .S7
+        .S8
+        .S9
+        button.R2 
+        .R3
+        .R4
+        .R5
+        .R6
+        .R7
+        img.p2_1(src='~@/assets/2.png')
+        img.p2_2(src='~@/assets/2.png')
+        img.p2_3(src='~@/assets/2.png')
+        img.p1_1(src='~@/assets/10.png')
+        img.p1_2(src='~@/assets/10.png')
+        img.p1_3(src='~@/assets/10.png')
+        img.p3_1(src='~@/assets/3.png')
+        img.p3_2(src='~@/assets/3.png')
+        img.p3_3(src='~@/assets/3.png')
+        img.p4_1(src='~@/assets/4.png')
+        img.p4_2(src='~@/assets/4.png')
+        img.p4_3(src='~@/assets/4.png')
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        i.rain
+        button.t1_1 【徵件公告】春之清華—藝術卓越獎科技藝術類 甄選辦法
+        button.t1_2 【展覽】《那顆Ｇ1咻！》國立清華大學藝術學院學士班第一屆系展
+        button.t1_3 【獲獎】《那顆Ｇ1咻！》國立清華大學藝術學院學士班第一屆系展獲獎名單
+        button.t2_1 國立清華大學藝術學院學士班 徵聘【助理教授級以上】專任教師1名
+        button.t2_2 【講座】《 科技物件與人類幻象講座IX》6/16 Tue
+        button.t2_3 【獲獎】2020春之清華 – 藝術卓越獎 科技藝術類 獲獎名單
+        button.t3_1 國立清華大學藝術學院學士班公開徵求班主任候選人啓事
+        button.t3_2 【演講】05/28 從腦科學看藝術 
+        button.t3_3 【獲獎】2020藝術學院學士班春之清華獎學金 獲獎名單
+        button.t4_1 2020個人申請錄取名單
+        button.t4_2 【講座】05/26 當代劇場展演實務 華山藝文林璞總監
+        button.t4_3 【獲獎】2019藝術學院學士班春之清華獎學金 獲獎名單
+      button
+        img.group6( src='~@/assets/Group 6.png')
 </template>
 
 <script>
@@ -190,11 +191,16 @@ export default {
 <style lang="sass">
 #app
   position: absolute
-  width: 1440px
+  width: 100%
   height: 2294px
   left: 0px
   top: 0px
   background: linear-gradient(180deg, rgba(156, 242, 234, 0.93) 0%, #10B0A4 100%)
+  margin: auto
+  aligin: center
+#container
+  margin: 0 auto
+  width: 80%
 .E
   width: 60px
 .A
@@ -231,6 +237,7 @@ export default {
   line-height: 28px
   letter-spacing: 0.3em
   letter-spacing: 0.4em
+  transition-property: opacity,width,height,left,font-size,color,z-index,top,background-color
 .logo
   z-index: 100
   position: absolute
