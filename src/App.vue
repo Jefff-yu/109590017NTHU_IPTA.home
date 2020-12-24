@@ -296,18 +296,38 @@ export default {
     animation: swing 1s ease
     animation-iteration-count: 1
 @keyframes swing
-  15%
-    transform: translateX(5px)
+  10%
+    transform: translateY(10px)
+  20%
+    transform: translateY(0px)
   30%
-    transform: translateX(-5px)
+    transform: translateY(8px)
+  40%
+    transform: translateY(0px)
   50%
-    transform: translateX(3px)
-  65%
-    transform: translateX(-3px)
+    transform: translateY(6px)
+  60%
+    transform: translateY(0px)
+  70%
+    transform: translateY(4px)
   80%
-    transform: translateX(2px)
+    transform: translateY(0px)
+  85%
+    transform: translateY(2px)
+  90%
+    transform: translateY(0px)
+  95%
+    transform: translateY(1px)
+  96%
+    transform: translateY(0px)
+  97%
+    transform: translateY(0.5px)
+  98%
+    transform: translateY(0px)
+  99%
+    transform: translateY(0.25px)
   100%
-    transform: translateX(0)
+    transform: translateY(0px)
 .header
   z-index: 50
 .characteristic
