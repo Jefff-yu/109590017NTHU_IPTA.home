@@ -7,11 +7,13 @@
             img.logo( src='~@/assets/cis-1-1.png')
           el-menu-item.A IPTA 藝術學院學士班
           el-menu-item.nthuipta(index='1' menu-trigger='hover') 國立清華大學藝術學院
-          el-menu-item.nthuipta(index='2' menu-trigger='hover') 首頁
+          el-menu-item.nthuipta(index='2' menu-trigger='hover') 
+            router-link(to='Home' style="text-decoration:none") 首頁
           el-menu-item.nthuipta(index='3' menu-trigger='hover') 最新消息
           el-submenu.nthuipta(index='4' menu-trigger='hover') 
             template.nthuipta(slot='title') 招生資訊
-            el-menu-item.nthuipta(index='4-1') 春之清華卓越獎五名
+            el-menu-item.nthuipta(index='4-1') 
+              router-link(to='scholarship' style="text-decoration:none;color:#FFFFFF;") 春之清華卓越獎五名
             el-menu-item.nthuipta(index='4-2') 學士班臉書粉絲頁
             el-submenu.nthuipta(index='4-3' menu-trigger='hover') 
               template.nthuipta(slot='title') ２０２０招生資訊
@@ -19,7 +21,8 @@
               el-menu-item(index='4-3-2') ２０２０招生簡章
               el-menu-item(index='4-3-3') ２０２０個人申請第二階段甄選注意事項
               el-menu-item(index='4-3-3') ２０２０報名繳交資料
-            el-menu-item.nthuipta(index='4-4') 招生Ｑ＆Ａ
+            el-menu-item.nthuipta(index='4-4') 
+              router-link(to='qa' style="text-decoration:none;color:#FFFFFF;") 招生Ｑ＆Ａ
             el-submenu.nthuipta(index='4-5' menu-trigger='hover') 
               template(slot='title') 過往招生資訊
               el-submenu.nthuipta(index='4-5-1' menu-trigger='hover') 
@@ -36,7 +39,8 @@
                 el-menu-item(index='4-5-2-4') ２０１８報名繳交資料
           el-submenu.nthuipta(index='5' menu-trigger='hover') 
             template.nthuipta(slot='title') 學士班
-            el-menu-item.nthuipta(index='5-1') 學士班簡介
+            el-menu-item.nthuipta(index='5-1') 
+              router-link(to='intro' style="text-decoration:none;color:#FFFFFF;") 學士班簡介
             el-menu-item.nthuipta(index='5-2') 學士班課程
             el-menu-item.nthuipta(index='5-3') 國際交換
             el-menu-item.nthuipta(index='5-4') 藝術學院大樓(New)
@@ -53,7 +57,8 @@
             el-menu-item.nthuipta(index='7-3') 動力藝術作品
             el-menu-item.nthuipta(index='7-4') 聲音藝術作品
             el-menu-item.nthuipta(index='7-4') 科技表演藝術
-          el-menu-item.nthuipta(index='8' menu-trigger='hover') 聯絡我們
+          el-menu-item.nthuipta(index='8' menu-trigger='hover') 
+            router-link(to='contact' style="text-decoration:none") 聯絡我們
       .section
         img.group36(src='~@/assets/Group 36.png')
         .spring 「春之清華」獎學金鼓勵藝術卓越學生「第一志願」選讀清華（5名）
@@ -190,7 +195,7 @@ export default {
 #app
   position: absolute
   width: 100%
-  height: 2294px
+  height: 100%
   left: 0px
   top: 0px
   background: linear-gradient(180deg, rgba(156, 242, 234, 0.93) 0%, #10B0A4 100%)
@@ -215,6 +220,7 @@ export default {
   left: 0px
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25)
 .header
+  color: #FFFFFF
   width: 1500px
   height: 400px
   position: fixed
