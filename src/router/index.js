@@ -6,7 +6,6 @@ import qa from '../views/qa.vue'
 import teachers from '../views/intro.vue'
 import scholarship from '../views/scholarship.vue'
 Vue.use(VueRouter)
-
 const routes = [
   {
     path: '/Home',

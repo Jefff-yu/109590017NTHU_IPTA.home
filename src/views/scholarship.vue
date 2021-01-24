@@ -68,7 +68,17 @@
       el-menu-item.nthuipta(index="8", menu-trigger="hover") 
         router-link(to="contact" style="text-decoration:none") 聯絡我們
   .section
-    .jkl 
+    .trec
+    .tin 春之清華獎學金
+    .introrec 
+    .introt 簡<br><br>介
+    .introin 藝術學院在2018年1月榮聘侯王淑昭女士為榮譽院長。侯王淑昭女士長期推動台灣藝文發展不遺餘力，在台灣是最早推動錄像藝術、裝置藝術、行為表演藝術的推動者之一，也是台灣推動工業與藝術結合的重要推手。侯王淑昭女士創辦的「春之文化基金會」於2018年11月捐贈1億元(每年捐款1千萬)挹注清華大學成立「春之清華藝術教育發展基金」，支持清華大學發展藝術教育，包括聘請一流師資、獎勵優秀學生、舉辦科技藝術展覽及藝術活動等。基金其中一個項目為成立「春之清華-藝術卓越獎學金」，用於獎助清華藝術學院學士班的優秀新生，第一年補助每系新生就學4年期間的學雜費，鼓勵藝術領域頂尖的學生選讀清華，細則另定。
+    .forrec
+    .fort 目<br><br>的
+    .forin 「春之清華」藝術卓越獎學金設置目的係期盼透過獎學金之授予，吸引與爭取藝術資優學生就讀清華；同時宣揚「春之清華」藝術教育發展基金設置理念之一 ：培植優秀藝術人才。透過「春之清華」藝術卓越獎學金，鼓勵與吸引藝術領域頂尖的學生選讀清華大學藝術學院學士班，讓卓越藝術苗圃人才在清華播種，藝術之春蔓臨清華。讓台灣頂尖大學中唯有藝術學院的清華大學能孕育台灣卓越藝術人才。
+    .wayrec
+    .wayt 方<br><br>式
+    .wayin 自108學年開始，藝術學院學士班招收之優秀學生（獎學金辦法各系另訂），每學期補助3萬，未來每學期維持在班上前幾名者（各系另定），下一個學期可持續獲此獎學金。
 </template>
 
 <script>
@@ -84,6 +94,125 @@ data() {
 };
 </script>
 <style lang="sass">
+.wayin
+  position: absolute;
+  width: 808px;
+  height: 80px;
+  left: 338px;
+  top: 1320px;
+  font-family: Mandali;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.35em;
+  color: #FFFFFF
+.wayt
+  position: absolute;
+  width: 39px;
+  height: 172px;
+  left: 204px;
+  top: 1311px;
+  font-family: Mandali;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.35em;
+  color: #FFFFFF;
+.wayrec
+  position: absolute;
+  width: 109px;
+  height: 260px;
+  left: 169px;
+  top: 1259px;
+  background: linear-gradient(180deg, #10B0A4 0%, rgba(16, 176, 164, 0) 100%);
+.forin
+  position: absolute;
+  width: 826px;
+  height: 226px;
+  left: 338px;
+  top: 887px;
+  font-family: Mandali;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.35em;
+  color: #FFFFFF;
+.fort
+  position: absolute;
+  width: 39px;
+  height: 172px;
+  left: 204px;
+  top: 918px;
+  font-family: Mandali;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.35em;
+  color: #FFFFFF;
+.forrec
+  position: absolute;
+  width: 109px;
+  height: 260px;
+  left: 169px;
+  top: 870px;
+  background: linear-gradient(180deg, #10B0A4 0%, rgba(16, 176, 164, 0) 100%);
+.introin
+  position: absolute;
+  width: 819px;
+  height: 274px;
+  left: 345px;
+  top: 476px;
+  font-family: Mandali;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.35em;
+  color: #FFFFFF;
+.introt
+  position: absolute;
+  width: 39px;
+  height: 172px;
+  left: 204px;
+  top: 525px;
+  font-family: Mandali;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.35em;
+  color: #FFFFFF;
+.introrec
+  position: absolute;
+  width: 109px;
+  height: 260px;
+  left: 169px;
+  top: 481px;
+  background: linear-gradient(180deg, #10B0A4 0%, rgba(16, 176, 164, 0) 100%);
+.tin
+  position: absolute;
+  width: 358px;
+  height: 40px;
+  left: 476px;
+  top: 221px;
+  font-family: Mandali;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.35em;
+  color: #FFFFFF;
+.trec
+  position: absolute;
+  width: 995px;
+  height: 183px;
+  left: 169px;
+  top: 152px;
+  background: linear-gradient(90deg, #E8437F 0%, rgba(232, 67, 127, 0) 100%);
 #app
     position: absolute
     width: 100%
